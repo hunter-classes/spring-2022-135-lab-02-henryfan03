@@ -12,12 +12,14 @@ int main() {
     for (int i = 0;i<10;i++) {
       std::cout << myData[i] << " ";
     }
-    std::cout << std::endl << std::endl;
+    std::cout << std::endl;
     std::cout << "Enter an index value: ";
     std::cin >> index;
     std::cout << "Enter an new array value: ";
     std::cin >> value;
     myData[index] = value;
-  } while (0 <= index && index <= 10);
+    std::cout << std::endl;
+  } while (0 <= index && index < 10);
+  std::cout << "Index out of range, exitting." << std::endl;
   return 0;
 }
